@@ -1,0 +1,25 @@
+/**
+ * Theme Name:  Национальная библиотека Республики Тыва им. А.С. Пушкина
+ * Description: 
+ * 
+ * Theme URI:   ###
+ * Author:      Chavynchak Aysh Alexeevich
+ * Author URI:  https://t.me/ayshstar
+ *
+ * Tags:        ###
+ * Text Domain: Домен перевода темы. Пр: twentythirteen
+ *
+ * License:     ###
+ * License URI: ###
+ *
+ * Version:     ###
+ */
+ /* код снизу не работает */
+
+ .card{
+   margin-bottom: 30px;
+ }
+ img{
+   max-width: 100%;
+   height: auto;
+ }
