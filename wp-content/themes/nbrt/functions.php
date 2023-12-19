@@ -19,12 +19,15 @@ function delete_intermediate_image_sizes( $sizes ){
 }
 function nbrt_theme(){
     add_theme_support('post_thumbnails');
+	add_theme_support('title-tag');
+	register_nav_menus(array(
+		'header-menu1' => 'меню в шапке1',
+		'footer-menu2' => 'меню в футере2'
+	));
 }
 add_action('after_setup_theme', 'nbrt_theme');
 
-
 /* -------------------------------------------------------------- Убираем заголовок с пагинации */
-
 
 function my_navigation_template( $template, $class ){
 	/*
