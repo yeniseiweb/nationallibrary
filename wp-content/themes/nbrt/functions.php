@@ -1,4 +1,7 @@
-<?php 
+<?php
+
+require_once __DIR__ . '/my_walker_menu.php';
+
 // Отключаем создание копий картинок в WordPress https://wp-kama.ru/id_4409/ubiraem-kopii-zagruzhaemyih-izobrazheniy.html
 function my_scripts(){
     wp_enqueue_style('nbrt', get_stylesheet_uri());
@@ -17,6 +20,9 @@ function delete_intermediate_image_sizes( $sizes ){
 		'medium_large',
 	] );
 }
+/*
+ * Подключение скриптов и стилей
+ */
 function nbrt_theme(){
     add_theme_support('post_thumbnails');
 	add_theme_support('title-tag');
@@ -27,7 +33,7 @@ function nbrt_theme(){
 }
 add_action('after_setup_theme', 'nbrt_theme');
 
-/* -------------------------------------------------------------- Убираем заголовок с пагинации */
+/* ---------------------------------- Убираем заголовок с пагинации ---------------------------------------------- */
 
 function my_navigation_template( $template, $class ){
 	/*
